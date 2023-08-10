@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveleye</title>
+    <link rel="shortcut icon" href="iconlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Titillium+Web:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="circle"></div>
+       
+    
+
+
+
+
+
+
+
+<div class="HERO" id="home">
+ 
+
+  <video poster="bgvideo_Trim.mp4" playsinline autoplay muted loop>
+    <source src="bgvideo_Trim.mp4" type="video/webm">
+    <source src="bgvideo_Trim.mp4" type="video/mp4">
+    </video>
+    <header>
+    <h1 class="zigu">TRAVELEYE</h1>
+      <nav>
+        <a href="nav.html">Menu</a>
+        
+    </header>
+    <div id="fashion">
+      <h2 class="there">Travel around the world with the new destination…</h2>
+    </div>
+ 
+
+  </div>
+
+
+<!--discover-->
+
+<div class="container discocer" id="discover">
+
+</div>
+
+
+
+<h1 class="title" >Explore place around the world</h1>
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="sbdcox.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Cox's Bazar,Bangladesh</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sbdbandar.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Bandarban, Bangladesh</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sbdkaptai.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Kaptai lake,Bnagladesh</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sbdsajek.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Sajek Vally,Bangladesh</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sbdsylhet.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Sylhet,Bangladesh</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindiatajmahal.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Tajmahal,India</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindiahamachal.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Himachal,India</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindialadak.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Ladak,India</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindiakashmir.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Kashmir,India</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindobali.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Bali,Indoneshia</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindopadarisland.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Padar Island,Indoneshia</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindopapua.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Papua,Indoneshia</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="sindokomodoisland.jpg" alt="Image">
+      <div class="slider__info">
+        <h2 style="color: #cecece;">Komodo Island,Indoneshia</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="see">
+    <a href="discover.html" style="padding: 3px 5px 3px 5px;
+      background-color: #dbdadadd;
+      border: 2px solid #fff;
+      border-radius: 5%;
+      text-decoration: none;
+      color: rgb(31, 29, 29);
+      margin-left: 90%;">see more</a>
+  </div>
+</div>
+<br>
+<br>
+
+
+<!--offer-->
+
+<div class="container" id="offer">
+ 
+  <h1 style="color: #fff;
+   margin-left: 35%;
+  ">What Can We Offer For You</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="various">
+    <h2 style="color: #b94916;">Various Destination</h2>
+  <p style="color: #ffffffa7;">Explore diverse locales, cultures, and wonders in the 
+    <br>captivating journey of 'Various Destinations.'
+     <br> An adventure of discovery awaits</p>
+  <div>
+ <br>
+
+ <div class="every">
+    <h2 style="color: #b94916;
+    margin-left: 30%; ">Everything is Included</h2>
+    <p style="color: #ffffffa7; margin-left: 30%;">Seamless indulgence awaits with 'Everything is Included.'
+      <br> A comprehensive experience, where every desire 
+      <br>finds fulfillment effortlessly.</p>
+ </div>
+
+ 
+ <div class="price">
+
+  <h2 style="color: #b94916;
+  margin-left: 70%; ">Affordable Prices</h2>
+  <p style="color: #ffffffa7; margin-left: 70%;">Discover unbeatable value in our 'Affordable Prices'
+    <br> collection. Quality meets affordability for a 
+    <br>budget-friendly and satisfying experience.</p>
+ </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+ <h1 style="color: #fff; margin-left: 35%;">We provide top  destination</h1>
+ <br>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="sbdsajek.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Sajek Vally</h5>
+        <p class="card-text">
+          Sajek Valley, Bangladesh: Enchanting hill retreat boasting lush greenery, indigenous communities, cool climate, and stunning vistas, popular for nature escapes and cultural immersion.</p>
+        <p class="card-text"><small class="text-body-secondary">$228</small></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="card2">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="sbdsylhet.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Sylhet</h5>
+        <p class="card-text">Sylhet, Bangladesh: Picturesque region renowned for tea gardens, rich cultural heritage, diverse cuisine, and the Ratargul Swamp Forest, attracting visitors for its natural and historical attractions</p>
+        <p class="card-text"><small class="text-body-secondary">$196</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="sbdbandar.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Bandarban</h5>
+        <p class="card-text">Bandarban, Bangladesh: Tranquil hill district cherished for its tribal culture, lush hills, Chimbuk Peak, and Boga Lake, offering a blend of adventure, spirituality, and breathtaking landscapes for travelers.</p>
+        <p class="card-text"><small class="text-body-secondary">$168</small></p>
+      </div>
+    </div>
+  
+</div>
+</div>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--blog-->
+<h1 style="color: #fff; margin-left: 35%;" id="blog">Read awsome blog</h1>
+<br>
+<br>
+<br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="sajekcard.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sajek Vally</h5>
+        <p class="card-text">Explore the tranquil beauty of Sajek Valley, Bangladesh—an enchanting hill retreat with lush landscapes, indigenous culture, and serene vistas. From adventurous treks and....   <a href="realblog.html">See more</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="sylhetcard.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sylhet</h5>
+        <p class="card-text">A captivating destination in Bangladesh. Tea gardens, vibrant culture, delectable cuisine, Ratargul Swamp Forest's mystique. Explore nature's wonders and immerse in a tapestry .... <a href="blog.html">See more</a></p>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<!--fotter-->
+<div class="cont">
+  <section id="contact">
+  
+    <h1 class="section-header">Contact</h1>
+    
+    <div class="contact-wrapper">
+    
+    <!-- Left contact page --> 
+      
+      <form id="contact-form" class="form-horizontal" role="form">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+          </div>
+        </div>
+  
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chattogram,bangladesh</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:" title="Give me a call">+880 183-586-8344</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">morshedulazim90@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="https://www.facebook.com/morshedulislam.azim" target="_blank" class="contact-icon">
+              <i class="lab la-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/the_selfish._/" target="_blank" class="contact-icon">
+              <i class="lab la-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://twitter.com/azim_ekhane" target="_blank" class="contact-icon">
+              <i class="lab la-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.pinterest.com/" target="_blank" class="contact-icon"></a>
+              <i class="lab la-pinterest" aria-hidden="true" ></i></a> 
+            </li>       
+          </ul>
+          <hr>
+  
+         
+  
+        </div>
+      
+    </div>
+    
+  </section>  
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER START -->
+<div class="footer" id="contact" style="
+margin-left: 20%;">
+  <div class="contain">
+  <div class="col">
+    <h1>Get to know us</h1>
+    <ul>
+      <li>Careers</li>
+      <li>blog</li>
+      <li>About Traveleye</li>
+      <li>Investor Relations</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  
+  <div class="col">
+    <h1>Accounts</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Resources</h1>
+    <ul>
+      <li>Webmail</li>
+      <li>WHOIS lookup</li>
+      <li>Site map</li>
+      <li>Become an Affiliate</li>
+      <li>Self publish with us</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Web chat</li>
+      <li>Open ticket</li>
+    </ul>
+  </div>
+  
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+        
+         <h7 style="color: #cececead;
+         margin-left: 35%;">© ALL OF THE RIGHTS RESERVED</h7>
+       
+
+     
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,22 +1,9 @@
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-
-
-
-
-
-
-  const coords = { x: 0, y: 0 };
+const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
   "#aaaaaa63"
-
-
+  
 ];
 
 circles.forEach(function (circle, index) {
